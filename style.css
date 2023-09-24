@@ -1,0 +1,46 @@
+/* Dropdown */
+
+.selector-outer-container {
+  margin: 0 100px;
+}
+
+.selector-container {
+	margin: 10px;
+}
+
+label.selector {
+  font-size: 2.5em;
+}
+
+/* Lengend */
+text.legend-label {
+  font-size: 2em;
+}
+
+circle.legend-color {
+  r: 1em;
+}
+
+
+/* Plot */
+circle.dot {
+  r: 0.8em;
+	opacity: 0.7;
+}
+
+/* Plot */
+.tick text {
+  font-size: 2.5em;
+}
+
+.tick line {
+  stroke: #C0C0BB;
+}
+
+.axis-label {
+  font-size: 4em;
+}
+
+.title {
+  font-size: 3em;
+}
