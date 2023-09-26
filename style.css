@@ -1,0 +1,44 @@
+div.row  {
+  margin-top: 50px;
+}
+
+div.row > * {
+  margin: auto;
+}
+
+#guide {
+  font-size: 1.2em;
+}
+
+/* Selector */
+
+span.selector {
+  margin: 2em;
+}
+
+button {
+  background-color: white;
+  border-radius: 50%;
+}
+
+span.selector-name {
+  font-size: 1.5em;
+  margin: 0.2em;
+}
+
+/* Lengend */
+
+text.legend-label {
+  font-size: 2em;
+}
+
+/* Coord */
+.tick text {
+  font-size: 2.5em;
+}
+
+/* Plot */
+
+path {
+  opacity: 0.3;
+}
