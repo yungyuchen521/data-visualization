@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Correlation Matrix</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+
+        <script>
+            const attr_arr = [
+                "length",
+                "diameter",
+                "height",
+                "whole_weight",
+                "shucked_weight",
+                "viscera_weight",
+                "shell_weight",
+                "rings",
+            ];
+        </script>
+    </head>
+    <body onload="handleLoad()">
+        <div class="row"><h1 id="title">Correlation Matrix</h1></div>
+
+        <div class="row">
+            <svg id="legend" width="800" , height="100"></svg>
+        </div>
+
+        <div class="row">
+            <svg id="male" class="matrix" width="500" height="500"></svg>
+            <svg id="female" class="matrix" width="500" height="500"></svg>
+            <svg id="infant" class="matrix" width="500" height="500"></svg>
+        </div>
+
+        <div class="row manual">
+            <ul>
+                <li>
+                    <strong>Diagonal: </strong>attribute names</li>
+                <li>
+                    <strong>Upper diagonal: </strong>correlation coefficient
+                </li>
+                <li>
+                    <strong>Lower diagonal: </strong>circle sizes are proportional to <b>abs(correlation coefficient)</b>
+                </li>
+            </ul>
+        </div>
+        
+        <script src="index.js"></script>
+        <script src="legend.js"></script>
+        <script>
+            const handleLoad = () => {
+                addLegend();
+                createPlots();
+            }
+        </script>
+    </body>
+</html>

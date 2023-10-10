@@ -1,0 +1,62 @@
+div.row  {
+    margin-top: 50px;
+}
+  
+div.row > * {
+    margin: auto;
+}
+
+svg {
+    margin: auto;
+}
+
+text {
+    font-size: 1em;
+    text-anchor: middle;
+    alignment-baseline: middle;
+}
+
+text.plot-title {
+    font-size: 3em;
+}
+
+text.diagonal {
+    fill: white;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+text.upper-diagonal {
+    stroke: black;
+    stroke-width: 0.3;
+    font-weight: bold;
+}
+
+rect {
+    stroke: rgb(203, 203, 203);
+    fill: rgb(255, 255, 255);
+}
+
+rect.diagonal {
+    fill: black;
+    rx: 1em;
+    ry: 1em;
+}
+
+circle {
+    stroke: black;
+}
+
+/* legend */
+g.axis text.title {
+    font-size: 4em;
+}
+
+g.axis text {
+    font-size: 2em;
+}
+
+/* manual */
+.manual {
+    font-size: 1.5em;
+}
