@@ -1,0 +1,37 @@
+div.row  {
+    margin-top: 50px;
+}
+  
+div.row > * {
+    margin: auto;
+}
+
+/* Legend */
+circle.legend {
+    r: 0.8em;
+}
+
+text.legend {
+    font-size: 2em;
+}
+
+/* Matrix */
+.matrix-axis {
+    font-size: 1.5em;
+}
+
+/* Scatter Plot */
+circle.dot {
+    r: 0.25em;
+    opacity: 0.7;
+}
+
+circle[fade=true] {
+    fill: gray;
+    opacity: 0.3;
+}
+
+/* Histogram */
+rect.bin {
+    fill: black;
+}

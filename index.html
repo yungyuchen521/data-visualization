@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brushable Scatter Plot Matrix</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+        <script>
+            const color_map = {
+                "Iris-setosa": "red",
+                "Iris-versicolor": "green",
+                "Iris-virginica": "blue",
+            };
+
+            const attr_arr = [
+                "sepal length",
+                "sepal width",
+                "petal length",
+                "petal width",
+            ];
+        </script>
+    </head>
+    <body>
+        <div class="row"><h1>Brushable Scatter Plot Matrix</h1></div>
+        <div class="legend-container"></div>
+        <div class="row svg-container">
+            <svg width="1200" height="1500"></svg>
+        </div>
+        <script src="histogram.js"></script>
+        <script src="brush.js"></script>
+        <script src="scatter_plot.js"></script>
+        <script src="index.js"></script>
+        <script src="legend.js"></script>
+    </body>
+</html>
