@@ -7,5 +7,5 @@
 ### Data
 ![iris](https://raw.githubusercontent.com/yungyuchen521/data-visualization/data/iris.csv)
 
-### Demo: 
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWplNTYzdHU2Nnc2MmQyaWViZHVic2JkMXBjMnF3eDU4dnR1bDA4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/A8kX3arPVuTaIZNJQj/giphy.gif)
+### Demo
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTI4ejRsbWE2N2RkdzhrY3lzdHZkZGlnNmlvdXZxbDFobW9yenpwbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xil3OHVbkz69HlEOnU/giphy.gif)
