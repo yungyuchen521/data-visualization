@@ -1,0 +1,71 @@
+div.row  {
+    margin-top: 50px;
+}
+
+div.row * {
+    margin: auto;
+}
+
+#title {
+    margin: auto;
+}
+
+#tool-tip {
+    position: absolute;
+
+    z-index: 100;
+    opacity: 0;
+
+    background-color: black;
+    color: white;
+
+    font-size: 1.5em;
+    padding: 15px;
+
+    border-radius: 1em;
+}
+
+/* ============= PLOT ============= */
+
+div.overflow-scroll {
+    overflow: scroll;
+}
+
+/* table */
+path.table-border {
+    stroke: black;
+    stroke-width: 5;
+}
+
+/* plot */
+rect.bar {
+    stroke: black;
+}
+
+rect.bar:hover {
+    opacity: 0.7;
+}
+
+/* axis */
+text.axis-school-name {
+    font-size: 0.8em;
+    /* text-anchor: end; */
+}
+
+/* legend */
+text.legend-label {
+    font-size: 1em;
+}
+
+rect.legend {
+    stroke: black;
+}
+
+/* ============= TOOLS ============= */
+#tools {
+    font-size: 1em;
+}
+
+#asc-desc-container {
+    margin: 20px 0;
+}
