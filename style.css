@@ -1,0 +1,55 @@
+div.row  {
+    margin-top: 50px;
+}
+
+div.row > * {
+    margin: auto;
+}
+
+/* AXIS */
+g.tick text {
+    font-size: 1.5em;
+}
+
+/* TOOLTIP */
+
+#tooltip {
+    position: absolute;
+
+    z-index: 100;
+    opacity: 0;
+
+    background-color: white;
+    color: black;
+
+    font-size: 1.5em;
+
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+#tooltip p {
+    margin: 10px;
+}
+
+#tooltip span {
+    text-decoration: underline;
+}
+
+/* GUIDE */
+#guide {
+    font-size: 1.5em;
+}
+
+/* ARRANGER  */
+.card-mid {
+    stroke: black;
+    fill: white;
+}
+
+.card-text {
+    /* fill: black; */
+    text-anchor: middle;
+    stroke: black;
+    stroke-width: 0.4;
+}
