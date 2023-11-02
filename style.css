@@ -1,0 +1,75 @@
+div.row  {
+    margin-top: 30px;
+}
+
+#title {
+    margin: auto;
+}
+
+#tool-tip {
+    position: absolute;
+
+    z-index: 100;
+    opacity: 0;
+
+    background-color: black;
+    color: white;
+
+    font-size: 1.5em;
+    padding: 15px;
+
+    border-radius: 1em;
+}
+
+/* ============= PLOT ============= */
+
+div.overflow-scroll {
+    overflow: scroll;
+}
+
+/* border */
+path.border {
+    stroke: black;
+    stroke-width: 3;
+}
+
+path.border.thick {
+    stroke-width: 5;
+}
+
+/* labels */
+text.district {
+    font-size: 2em;
+}
+
+text.pollutant {
+    font-size: 1.5em;
+}
+
+g.tick text {
+    font-size: 1.2em;
+}
+
+/* ============= TOOLS ============= */
+div.tools * {
+    margin: auto;
+    font-size: 1.1em;
+}
+
+div.tools div {
+    display: block;
+    margin: 20px 30px;
+}
+
+div.tools span {
+    margin: auto;
+}
+
+#tool-box {
+    border: 1px solid black;
+    /* padding: 2px; */
+}
+
+input {
+    border: 1px solid black;
+}

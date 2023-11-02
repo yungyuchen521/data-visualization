@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Horizon Chart</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+
+        <script>
+            const POLLUTANTS = ["CO", "NO2", "O3", "PM2.5", "PM10", "SO2"];
+
+            const COLOR_MAP = {
+                CO: "Greys",
+                NO2: "Oranges",
+                O3: "Greens",
+                "PM2.5": "Blues",
+                PM10: "Purples",
+                SO2: "Reds",
+            };
+        </script>
+    </head>
+    <body onload="handleLoaded()">
+        <div id="tool-tip">
+            <p><span id="dt"></span></p>
+            <p><span id="val"></span> (<span id="unit"></span>)</p>
+        </div>
+
+        <div class="row">
+            <h1 id="title">Seoul Air Pollution</h1>
+        </div>
+
+        <div class="row"></div>
+
+        <div class="row">
+            <div class="col-sm-3 tools" style="height: 100px">
+                <div><p>Select display period and number of bands</p></div>
+                <div id="tool-box">
+                    <div>
+                        <label for="begin-date">Begin: </label>
+                        <input
+                            type="date"
+                            name="begin-date"
+                            id="begin-date"
+                            min="2017-01-01"
+                            value="2017-01-01"
+                            onchange="handleDateChanged()"
+                        />
+                    </div>
+                    <div>
+                        <label for="end-date">End: </label>
+                        <input
+                            type="date"
+                            name="end-date"
+                            id="end-date"
+                            max="2019-12-31"
+                            value="2017-12-31"
+                            onchange="handleDateChanged()"
+                        />
+                    </div>
+                    <div>
+                        <label for="bands">Bands: </label>
+                        <input type="number" name="bands" id="bands" min="2" max="8" value="4" />
+                    </div>
+                    <div class="row">
+                        <button id="refresh" onclick="refresh()">Refresh</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9 overflow-scroll" style="height: 650px">
+                <svg width="1000"></svg>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+        <script>
+            const handleLoaded = () => {
+                handleDateChanged();
+                refresh();
+            };
+
+            const handleDateChanged = () => {
+                const begin = document.getElementById("begin-date");
+                const end = document.getElementById("end-date");
+
+                if (begin.value > begin.max) begin.value = begin.max;
+                if (begin.value < begin.min) begin.value = begin.min;
+
+                if (end.value > end.max) end.value = end.max;
+                if (end.value < end.min) end.value = end.min;
+
+                begin.max = end.value;
+                end.min = begin.value;
+            };
+        </script>
+    </body>
+</html>
