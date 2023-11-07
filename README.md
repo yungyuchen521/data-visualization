@@ -11,13 +11,23 @@
   </thead>
   <tbody>
     <tr>
+      <td>7</td>
+      <td>Horizon Chart</td>
+      <td>
+        <a href="https://www.kaggle.com/datasets/bappekim/air-pollution-in-seoul">Air Pollution in Seoul</a>
+      </td>
+      <td>
+        <a href="https://github.com/yungyuchen521/data-visualization/tree/hw7_horizonchart">link</a>
+      </td>
+    </tr>
+    <tr>
       <td>6</td>
-      <td>Stream Graph</td>
+      <td>Theme River</td>
       <td>
         <a href="https://github.com/yungyuchen521/data-visualization/blob/data/ma_lga_12345.csv">property sales</a>
       </td>
       <td>
-        pending
+        <a href="https://github.com/yungyuchen521/data-visualization/tree/hw6_themeriver">link</a>
       </td>
     </tr>
     <tr>
